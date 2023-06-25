@@ -530,7 +530,57 @@ nav a {
     height: 206px;
     width: 250px;
   }
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    background-color: #5a5555;
+    border: black solid;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 30%;
+    font-family: "Bruno Ace SC", cursive;
+    color: rgb(207, 124, 0);
+  }
+  h5 {
+    grid-row: 3/5;
+    grid-column: 2/4;
+    border: black solid;
+    height: 40%;
+    width: 95%;
+    background-color: rgb(37, 37, 37);
+  }
 }
+.usuario-login {
+  grid-row: 6/7;
+  grid-column: 2/4;
+  border: black solid;
+}
+
+.password-login {
+  grid-row: 8/9;
+  grid-column: 2/4;
+  border: black solid;
+}
+
+.ingresar-login {
+  grid-row: 10/11;
+  grid-column: 2/4;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.contraseña-login {
+  grid-row: 12/12;
+  grid-column: 2/4;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 768px) {
   header {
